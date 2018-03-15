@@ -4,6 +4,7 @@ macx:TARGET = "GoldCoin-Qt"
 VERSION = 0.7.1.8
 INCLUDEPATH += src src/json src/qt
 QT += network
+greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 DEFINES += QT_GUI BOOST_THREAD_USE_LIB BOOST_SPIRIT_THREADSAFE QT_STATIC_BUILD
 CONFIG += no_include_pwd
 CONFIG += thread
